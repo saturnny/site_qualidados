@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serviços — Qualidados</title>
+  <meta name="description" content="Gerenciamento de paradas de manutenção, gerenciamento de projetos, gestão de ativos, consultoria em engenharia e soluções digitais: Fiscal 4.0, QD Inspect, Cleopatra Enterprise, QG IA e EngAgil.">
+  <meta name="theme-color" content="#0E0406">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      var h = document.documentElement;
+      var pref = null;
+      try { pref = localStorage.getItem("qd-motion"); } catch (e) {}
+      var reduced = pref ? pref === "reduced" : window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (reduced) h.classList.add("motion-reduced");
+      h.classList.add("js-anim");
+      setTimeout(function () { if (!window.__qdReady) h.classList.remove("js-anim"); }, 4000);
+      try { if (sessionStorage.getItem("qd-nav")) { h.classList.add("is-arriving"); sessionStorage.removeItem("qd-nav"); } } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="servicos">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div id="qd-header"></div>
+  <script src="assets/js/layout.js"></script>
+
+  <main id="main">
+    <section class="page-hero on-dark">
+      <div class="page-hero__glow"></div>
+      <div class="blueprint"></div>
+      <div class="page-hero__art" aria-hidden="true">
+        <svg data-draw viewBox="0 0 600 600" fill="none" stroke="currentColor" stroke-width="1">
+          <path d="M300 90l22 4 8 30 26 11 26-17 18 13-10 30 18 22 31-3 8 21-26 18 3 28 28 14-4 22-31 2-12 26 18 25-15 17-28-13-23 17 3 31-21 7-15-27-28 1-15 27-21-7 3-31-23-17-28 13-15-17 18-25-12-26-31-2-4-22 28-14 3-28-26-18 8-21 31 3 18-22-10-30 18-13 26 17 26-11 8-30z" opacity=".75"/>
+          <circle cx="300" cy="300" r="110" opacity=".55"/>
+          <circle cx="300" cy="300" r="46" opacity=".8"/>
+          <circle cx="300" cy="300" r="165" stroke-dasharray="3 9" opacity=".45"/>
+          <path d="M300 300l150-150M40 300h110M450 300h110M300 40v110" opacity=".3"/>
+          <path d="M470 110h80M510 90v40" opacity=".5"/>
+          <text x="478" y="80" fill="currentColor" stroke="none" font-size="12" font-family="IBM Plex Mono, monospace" opacity=".7">Z = 16</text>
+        </svg>
+      </div>
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está em" data-hero><a href="index.html">Início</a><span>/</span><span>Serviços</span></nav>
+        <h1 class="display" data-split="hero">Especialidades e <em>soluções</em></h1>
+        <p class="lead" data-hero>Engenharia de ponta a ponta: do planejamento da parada à gestão do ativo, com plataformas digitais que dão visibilidade em tempo real.</p>
+        <div class="page-hero__meta" data-hero>
+          <div><b>5</b><span>Especialidades</span></div>
+          <div><b>5</b><span>Soluções digitais</span></div>
+          <div><b>EPC · EPCM</b><span>e Turnkey</span></div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="subnav" aria-label="Nesta página">
+      <div class="container">
+        <ul>
+          <li><a href="#paradas"><small>01</small>Paradas</a></li>
+          <li><a href="#projetos"><small>02</small>Projetos</a></li>
+          <li><a href="#ativos"><small>03</small>Gestão de ativos</a></li>
+          <li><a href="#consultoria"><small>04</small>Consultoria</a></li>
+          <li><a href="#tecnologia"><small>05</small>Soluções tecnológicas</a></li>
+          <li><a href="#solucoes"><small>06</small>Plataformas digitais</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Especialidades -->
+    <section class="section" id="especialidades" style="padding-bottom:40px">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Especialidades</span>
+            <h2 class="title" data-split>Cinco frentes, <em>uma metodologia</em>.</h2>
+          </div>
+          <p class="lead" data-reveal>Metodologia própria combinada às melhores práticas de mercado, aplicada por especialistas que conhecem o chão de fábrica.</p>
+        </div>
+
+        <article class="service" id="paradas">
+          <div class="service__num" data-reveal>01</div>
+          <div data-reveal>
+            <span class="service__icon"><i data-icon="wrench"></i></span>
+            <h3>Gerenciamento de Paradas de Manutenção</h3>
+            <div class="prose"><p>Pioneira neste tipo de projeto, a Qualidados conta com know-how de 30 anos de mercado, com foco total e excelência na execução do gerenciamento de paradas e do portfólio de paradas, com atuação em diversos segmentos.</p></div>
+          </div>
+          <div data-reveal>
+            <p class="portfolio-title">Portfólio</p>
+            <ul class="check-list">
+              <li>Gerenciamento do portfólio de paradas</li>
+              <li>Gerenciamento de paradas</li>
+              <li>Fiscalização</li>
+              <li>Gestão de comissionamento</li>
+              <li>Planejamento e controle</li>
+              <li>Gerenciamento de riscos</li>
+              <li>Risco técnico</li>
+              <li>Construtibilidade</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service" id="projetos">
+          <div class="service__num" data-reveal>02</div>
+          <div data-reveal>
+            <span class="service__icon"><i data-icon="gantt"></i></span>
+            <h3>Gerenciamento de Projetos</h3>
+            <div class="prose"><p>Ao longo de sua existência, a Qualidados tem investido continuamente em metodologias e soluções tecnológicas baseadas em melhores práticas internas e externas, com ampla experiência em modelos EPC, EPCM e Turnkey.</p></div>
+          </div>
+          <div data-reveal>
+            <p class="portfolio-title">Portfólio</p>
+            <ul class="check-list check-list--2">
+              <li>Gerenciamento de portfólio</li>
+              <li>Gerenciamento de programas</li>
+              <li>Gerenciamento de projetos</li>
+              <li>Controle de custos e orçamentos</li>
+              <li>Gerenciamento de suprimentos</li>
+              <li>Gerenciamento das comunicações</li>
+              <li>Gestão documental</li>
+              <li>Gestão de mudanças</li>
+              <li>Planejamento e controle</li>
+              <li>Gerenciamento de riscos</li>
+              <li>Construtibilidade</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service" id="ativos">
+          <div class="service__num" data-reveal>03</div>
+          <div data-reveal>
+            <span class="service__icon"><i data-icon="pulse"></i></span>
+            <h3>Gestão de Ativos, Confiabilidade e Manutenção</h3>
+            <div class="prose"><p>Profissionais especializados na implantação de gestão de ativos, confiabilidade e rotina de manutenção, com metodologia própria combinada às melhores práticas e às referências da ISO 55.</p></div>
+          </div>
+          <div data-reveal>
+            <p class="portfolio-title">Portfólio</p>
+            <ul class="check-list">
+              <li>Gestão de ativos</li>
+              <li>Engenharia de manutenção</li>
+              <li>Implantação de CMMS (SAP / Totvs), ERP e EAM</li>
+              <li>Elaboração de RCM e FMEA/FMECA</li>
+              <li>Elaboração de planos de manutenção</li>
+              <li>Planejamento e controle de manutenção (PCM)</li>
+              <li>Estudos de confiabilidade (Análise RAM, LDA, Weibull)</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service" id="consultoria">
+          <div class="service__num" data-reveal>04</div>
+          <div data-reveal>
+            <span class="service__icon"><i data-icon="compass"></i></span>
+            <h3>Consultoria em Engenharia</h3>
+            <div class="prose"><p>Serviços de consultoria especializada em diagnóstico, análise e implementação de melhorias, associados à expertise construída em três décadas de projetos industriais.</p></div>
+          </div>
+          <div data-reveal>
+            <p class="portfolio-title">Portfólio</p>
+            <ul class="check-list">
+              <li>Diagnóstico de maturidade — Gestão de Ativos</li>
+              <li>Diagnóstico de maturidade — Paradas Programadas</li>
+              <li>Diagnóstico de maturidade — Gestão de Projetos</li>
+              <li>Gerenciamento de riscos</li>
+              <li>Construtibilidade</li>
+              <li>Estudo de tempos e movimentos</li>
+              <li>Assessment em FEL</li>
+              <li>Implantação de sistemas integrados de gestão</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service" id="tecnologia">
+          <div class="service__num" data-reveal>05</div>
+          <div data-reveal>
+            <span class="service__icon"><i data-icon="cpu"></i></span>
+            <h3>Desenvolvimento de Soluções Tecnológicas</h3>
+            <div class="prose"><p>Time especializado no desenvolvimento de produtos tecnológicos sob medida, com gestão efetiva de um ecossistema de inovação que conecta startups, academia e indústria.</p></div>
+          </div>
+          <div data-reveal>
+            <p class="portfolio-title">Portfólio</p>
+            <ul class="check-list">
+              <li>Desenvolvimento de produtos</li>
+              <li>Prototipagem</li>
+              <li>Aceleração de software</li>
+              <li>Consultoria em programas de inovação</li>
+              <li>Digitalização de processos</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Soluções -->
+    <section class="section section--dark" id="solucoes">
+      <div class="blueprint" style="opacity:.5"></div>
+      <div class="container" style="position:relative">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Plataformas digitais</span>
+            <h2 class="title" data-split>Soluções que colocam a operação <em>sob controle</em>.</h2>
+          </div>
+          <p class="lead" data-reveal>Web e mobile, integradas ao ERP, com funcionamento offline e dados em tempo real para quem decide e para quem executa.</p>
+        </div>
+
+        <div class="products">
+          <article class="product" id="fiscal">
+            <div data-reveal="left">
+              <span class="product__label"><i data-icon="eye"></i>Fiscalização e comissionamento</span>
+              <h3>Fiscal 4.0</h3>
+              <p>Tecnologia de gerenciamento e monitoramento de fiscalização e comissionamento na fase de acompanhamento e controle de projetos, com programação digital, formulários personalizados e realidade aumentada em dispositivos móveis.</p>
+              <ul class="check-list">
+                <li>Interfaces web e mobile integradas</li>
+                <li>Desvios visíveis em tempo real para gestores</li>
+                <li>Checklists em campo com vídeos, fotos e documentação técnica</li>
+                <li>Realidade aumentada aplicada à inspeção</li>
+              </ul>
+            </div>
+            <div class="product__visual" data-reveal="right">
+              <div class="device" data-dash="fiscal"><div class="device__bar"><div class="device__dots"><i></i><i></i><i></i></div><div class="device__url">app.qualidados.com.br/fiscal-4.0</div><span class="device__live">AO VIVO</span></div><div class="device__screen"></div></div>
+            </div>
+          </article>
+
+          <article class="product" id="qd-inspect">
+            <div data-reveal="right">
+              <span class="product__label"><i data-icon="search"></i>Inspeção de equipamentos</span>
+              <h3>QD Inspect</h3>
+              <p>Solução de gerenciamento de inspeções de equipamentos e processos que centraliza e padroniza inspeções remotas, rotas e checklists.</p>
+              <ul class="check-list">
+                <li>Histórico completo de inspeções e formulários customizados</li>
+                <li>Monitoramento de não conformidades com geolocalização</li>
+                <li>Dashboards com priorização por criticidade</li>
+                <li>Funcionamento offline / online, web e mobile</li>
+              </ul>
+            </div>
+            <div class="product__visual" data-reveal="left">
+              <div class="device" data-dash="inspect"><div class="device__bar"><div class="device__dots"><i></i><i></i><i></i></div><div class="device__url">app.qualidados.com.br/qd-inspect</div><span class="device__live">AO VIVO</span></div><div class="device__screen"></div></div>
+            </div>
+          </article>
+
+          <article class="product" id="cleopatra">
+            <div data-reveal="left">
+              <span class="product__label"><i data-icon="layers"></i>Projetos e paradas</span>
+              <h3>Cleopatra Enterprise</h3>
+              <p>Plataforma de gestão de projetos e paradas de manutenção trazida ao Brasil pela Qualidados, com centralização de informações em uma interface única.</p>
+              <ul class="check-list">
+                <li>Integração com as principais ferramentas de produtividade</li>
+                <li>Acompanhamento em tempo real e colaboração remota</li>
+                <li>Verificação de qualidade rigorosa</li>
+                <li>Planejamento aperfeiçoado para minimizar a inatividade</li>
+              </ul>
+            </div>
+            <div class="product__visual" data-reveal="right">
+              <div class="device" data-dash="cleopatra"><div class="device__bar"><div class="device__dots"><i></i><i></i><i></i></div><div class="device__url">app.qualidados.com.br/cleopatra-enterprise</div><span class="device__live">AO VIVO</span></div><div class="device__screen"></div></div>
+            </div>
+          </article>
+
+          <article class="product" id="qg-ia">
+            <div data-reveal="right">
+              <span class="product__label"><i data-icon="brain"></i>Ativos com inteligência artificial</span>
+              <h3>QG IA</h3>
+              <p>Gestão de ativos, confiabilidade e engenharia de manutenção com inteligência artificial, somando software e serviços de diagnóstico, consultoria e outsourcing.</p>
+              <ul class="check-list">
+                <li>Software de controle de manutenção e sistema preditivo</li>
+                <li>Monitoramento de falhas</li>
+                <li>Aplicativos Android e iOS</li>
+                <li>API para integração com o ERP</li>
+              </ul>
+            </div>
+            <div class="product__visual" data-reveal="left">
+              <div class="device" data-dash="qgia"><div class="device__bar"><div class="device__dots"><i></i><i></i><i></i></div><div class="device__url">app.qualidados.com.br/qg-ia</div><span class="device__live">AO VIVO</span></div><div class="device__screen"></div></div>
+            </div>
+          </article>
+
+          <article class="product" id="engagil">
+            <div data-reveal="left">
+              <span class="product__label"><i data-icon="hardhat"></i>Gestão ágil de construção</span>
+              <h3>EngAgil</h3>
+              <p>Plataforma web para planejamento, supervisão, gerenciamento de equipes e alocação de recursos em obras e montagens.</p>
+              <ul class="check-list">
+                <li>Integração com ERP e aplicativo móvel em nuvem</li>
+                <li>Registro georreferenciado e assinatura digital</li>
+                <li>Módulos de execução com dashboards</li>
+                <li>Geração automática de indicadores</li>
+              </ul>
+            </div>
+            <div class="product__visual" data-reveal="right">
+              <div class="device" data-dash="engagil"><div class="device__bar"><div class="device__dots"><i></i><i></i><i></i></div><div class="device__url">app.qualidados.com.br/engagil</div><span class="device__live">AO VIVO</span></div><div class="device__screen"></div></div>
+            </div>
+          </article>
+        </div>
+        <p class="mono" style="font-size:12.5px;letter-spacing:.14em;color:var(--on-dark-muted);text-transform:uppercase;margin-top:12px">Telas ilustrativas · dados fictícios</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="callout" data-reveal>
+          <div class="row">
+            <div>
+              <span class="eyebrow">Próximo passo</span>
+              <h2 class="title-sm" style="margin-top:16px">Quer ver uma solução rodando na sua operação?</h2>
+              <p>Agende uma conversa com nosso time técnico para um diagnóstico inicial e uma demonstração.</p>
+            </div>
+            <a class="btn btn-gold" href="contato.html" data-magnetic data-arrow>Agendar conversa</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="qd-footer"></div>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script defer src="assets/js/dashboards.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</body>
+</html>

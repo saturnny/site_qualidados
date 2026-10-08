@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conteúdo — Qualidados</title>
+  <meta name="description" content="Artigos técnicos, QualiNews, press releases e a Qualidados na mídia: gestão, inovação e engenharia.">
+  <meta name="theme-color" content="#0E0406">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      var h = document.documentElement;
+      var pref = null;
+      try { pref = localStorage.getItem("qd-motion"); } catch (e) {}
+      var reduced = pref ? pref === "reduced" : window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (reduced) h.classList.add("motion-reduced");
+      h.classList.add("js-anim");
+      setTimeout(function () { if (!window.__qdReady) h.classList.remove("js-anim"); }, 4000);
+      try { if (sessionStorage.getItem("qd-nav")) { h.classList.add("is-arriving"); sessionStorage.removeItem("qd-nav"); } } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="conteudo">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div id="qd-header"></div>
+  <script src="assets/js/layout.js"></script>
+
+  <main id="main">
+    <section class="page-hero on-dark" style="min-height:64vh">
+      <div class="page-hero__glow"></div>
+      <div class="blueprint"></div>
+      <div class="page-hero__art" aria-hidden="true">
+        <svg data-draw viewBox="0 0 600 600" fill="none" stroke="currentColor" stroke-width="1">
+          <rect x="150" y="90" width="300" height="400" rx="6" opacity=".6"/>
+          <path d="M190 150h220M190 190h180M190 230h220M190 270h140" opacity=".55"/>
+          <rect x="190" y="310" width="220" height="130" opacity=".45"/>
+          <path d="M200 420l50-50 40 30 60-70 50 40" opacity=".8"/>
+          <rect x="110" y="60" width="300" height="400" rx="6" stroke-dasharray="4 8" opacity=".3"/>
+          <circle cx="470" cy="470" r="60" opacity=".5"/>
+          <path d="M513 513l50 50" opacity=".5"/>
+        </svg>
+      </div>
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está em" data-hero><a href="index.html">Início</a><span>/</span><span>Conteúdo</span></nav>
+        <h1 class="display" data-split="hero">Conhecimento que <em>move a indústria</em></h1>
+        <p class="lead" data-hero>Artigos técnicos escritos pelos engenheiros da Qualidados, notícias, comunicados e matérias na imprensa.</p>
+      </div>
+    </section>
+
+    <section class="section section--warm" id="biblioteca">
+      <span id="artigos" class="sr-only"></span><span id="qualinews" class="sr-only"></span><span id="press" class="sr-only"></span><span id="midia" class="sr-only"></span>
+      <div class="container">
+        <div class="filters" data-filters role="group" aria-label="Filtrar conteúdo" data-reveal>
+          <button class="filter is-active" type="button" data-filter="todos" aria-pressed="true">Todos <b>34</b></button>
+          <button class="filter" type="button" data-filter="artigos" aria-pressed="false">Artigos técnicos <b>9</b></button>
+          <button class="filter" type="button" data-filter="qualinews" aria-pressed="false">QualiNews <b>9</b></button>
+          <button class="filter" type="button" data-filter="press" aria-pressed="false">Press releases <b>7</b></button>
+          <button class="filter" type="button" data-filter="midia" aria-pressed="false">Na mídia <b>9</b></button>
+        </div>
+
+        <div class="posts">
+          <!-- Artigos técnicos -->
+          <a class="post" data-cat="artigos" href="https://qualidados.com.br/conhecimento-como-ativo-estrategico-na-engenharia-consultiva/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="3"></div><span class="post__cat">Artigo técnico</span><div class="post__body"><h3>Conhecimento como ativo estratégico na engenharia consultiva</h3><span class="link-arrow">Ler artigo <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="artigos" href="https://qualidados.com.br/do-pmo-ao-vmo-como-a-gestao-orientada-a-valor-esta-transformando-os-projetos-industriais/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="0"></div><span class="post__cat">Artigo técnico</span><div class="post__body"><h3>Do PMO ao VMO: como a gestão orientada a valor está transformando os projetos industriais</h3><span class="link-arrow">Ler artigo <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="artigos" href="https://qualidados.com.br/seguranca-como-valor-organizacional-2000-dias-sem-acidentes-com-afastamento/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="2"></div><span class="post__cat">Artigo técnico</span><div class="post__body"><h3>Segurança como valor organizacional: 2.000 dias sem acidentes com afastamento</h3><span class="link-arrow">Ler artigo <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="artigos" href="https://qualidados.com.br/gerenciamento-de-riscos-em-paradas-complexas-a-previsibilidade-alcancada-por-simulacoes-probabilisticas/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="1"></div><span class="post__cat">Artigo técnico</span><div class="post__body"><h3>Gerenciamento de riscos em paradas complexas: a previsibilidade alcançada por simulações probabilísticas</h3><span class="link-arrow">Ler artigo <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="artigos" href="https://qualidados.com.br/padronizacao-das-praticas-para-gerenciamento-de-riscos-em-paradas-de-manutencao/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="5"></div><span class="post__cat">Artigo técnico</span><div class="post__body"><h3>Padronização das práticas para gerenciamento de riscos em paradas de manutenção</h3><span class="link-arrow">Ler artigo <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="artigos" href="https://qualidados.com.br/solucoes-tecnologicas-da-qualidados-engenharia-inovacao-e-eficiencia-a-servico-dos-nossos-clientes/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="4"></div><span class="post__cat">Artigo técnico</span><div class="post__body"><h3>Soluções tecnológicas da Qualidados Engenharia: inovação e eficiência a serviço dos nossos clientes</h3><span class="link-arrow">Ler artigo <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="artigos" href="https://qualidados.com.br/planos-contingencia-gerenciamento-riscos-projetos-engenharia/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="1"></div><span class="post__cat">Artigo técnico</span><div class="post__body"><h3>Planos de contingência no gerenciamento de riscos em projetos de engenharia</h3><span class="link-arrow">Ler artigo <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="artigos" href="https://qualidados.com.br/gestao-de-ativos/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="5"></div><span class="post__cat">Artigo técnico</span><div class="post__body"><h3>Gestão de Ativos: o coração da indústria</h3><span class="link-arrow">Ler artigo <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="artigos" href="https://qualidados.com.br/aplicacao-solucao-gerenciamento-custos/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="2"></div><span class="post__cat">Artigo técnico</span><div class="post__body"><h3>Estudo de caso: aplicação de uma solução para gerenciamento de custos</h3><span class="link-arrow">Ler artigo <i data-icon="arrow"></i></span></div></a>
+
+          <!-- QualiNews -->
+          <a class="post" data-cat="qualinews" href="https://qualidados.com.br/qualidados-anuncia-novo-diretor-comercial-e-de-marketing/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="3"></div><span class="post__cat">QualiNews</span><div class="post__body"><h3>Qualidados anuncia novo Diretor Comercial e de Marketing</h3><span class="link-arrow">Ler notícia <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="qualinews" href="https://qualidados.com.br/transformacao-digital-e-integracao-de-tecnologias-pautam-a-participacao-da-qualidados-no-sgpl-2025/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="4"></div><span class="post__cat">QualiNews</span><div class="post__body"><h3>Transformação digital e integração de tecnologias pautam a participação da Qualidados no SGPL 2025</h3><span class="link-arrow">Ler notícia <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="qualinews" href="https://qualidados.com.br/qualidados-leva-mensagem-de-cuidado-e-conexao-a-sipat-da-petrobras/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="0"></div><span class="post__cat">QualiNews</span><div class="post__body"><h3>Qualidados leva mensagem de cuidado e conexão à SIPAT da Petrobras</h3><span class="link-arrow">Ler notícia <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="qualinews" href="https://qualidados.com.br/qualidados-fortalece-agenda-de-sustentabilidade-em-visita-a-tag/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="3"></div><span class="post__cat">QualiNews</span><div class="post__body"><h3>Qualidados fortalece agenda de sustentabilidade em visita à TAG</h3><span class="link-arrow">Ler notícia <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="qualinews" href="https://qualidados.com.br/qualidados-registra-salto-de-55-e-entra-no-ranking-das-15-maiores-consultorias-de-engenharia-do-brasil/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="2"></div><span class="post__cat">QualiNews</span><div class="post__body"><h3>Qualidados registra salto de 55% e entra no ranking das 15 maiores consultorias de engenharia do Brasil</h3><span class="link-arrow">Ler notícia <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="qualinews" href="https://qualidados.com.br/potencializando-historias-italo-cerqueira/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="4"></div><span class="post__cat">QualiNews</span><div class="post__body"><h3>Potencializando Histórias: Ítalo Cerqueira</h3><span class="link-arrow">Ler notícia <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="qualinews" href="https://qualidados.com.br/qualidados-estreita-lacos-com-clientes-e-parceiros-no-rio-pipeline-logistics/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="3"></div><span class="post__cat">QualiNews</span><div class="post__body"><h3>Qualidados estreita laços com clientes e parceiros no Rio Pipeline &amp; Logistics</h3><span class="link-arrow">Ler notícia <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="qualinews" href="https://qualidados.com.br/qualidados-adere-ao-pacto-global-da-onu-e-reforca-compromisso-com-sustentabilidade/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="0"></div><span class="post__cat">QualiNews</span><div class="post__body"><h3>Qualidados adere ao Pacto Global da ONU e reforça compromisso com sustentabilidade</h3><span class="link-arrow">Ler notícia <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="qualinews" href="https://qualidados.com.br/qualidados-engenharia-recebe-o-selo-pacto-pela-mulher-da-prefeitura-de-salvador/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="4"></div><span class="post__cat">QualiNews</span><div class="post__body"><h3>Qualidados Engenharia recebe o Selo Pacto pela Mulher da Prefeitura de Salvador</h3><span class="link-arrow">Ler notícia <i data-icon="arrow"></i></span></div></a>
+
+          <!-- Press releases -->
+          <a class="post" data-cat="press" href="https://qualidados.com.br/qualidados-traz-ao-brasil-a-plataforma-cleopatra-uma-solucao-inovadora-em-gestao-de-projetos-e-paradas-de-manutencao/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="5"></div><span class="post__cat">Press release</span><div class="post__body"><h3>Qualidados traz ao Brasil a plataforma Cleopatra, uma solução inovadora em gestão de projetos e paradas de manutenção</h3><span class="link-arrow">Ler comunicado <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="press" href="https://qualidados.com.br/qualidados-genesis-ia-inovacao-gestao-de-ativos/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="4"></div><span class="post__cat">Press release</span><div class="post__body"><h3>Qualidados Genesis IA: inovação na gestão de ativos industriais e hospitalares</h3><span class="link-arrow">Ler comunicado <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="press" href="https://qualidados.com.br/qualidados-entre-as-15-maiores-empresas-de-projetos-e-consultoria-do-brasil-2/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="2"></div><span class="post__cat">Press release</span><div class="post__body"><h3>Crescendo na adversidade: Qualidados entre as 15 maiores empresas de projetos e consultoria do Brasil</h3><span class="link-arrow">Ler comunicado <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="press" href="https://qualidados.com.br/qualidados-e-vencedora-do-premio-parceria-responsavel-da-petrobras/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="0"></div><span class="post__cat">Press release</span><div class="post__body"><h3>Qualidados é vencedora do Prêmio Parceria Responsável da Petrobras</h3><span class="link-arrow">Ler comunicado <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="press" href="https://qualidados.com.br/qualidados-engenharia-faz-20-anos-com-reconhecimento-de-gestao-e-eficiencia/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="3"></div><span class="post__cat">Press release</span><div class="post__body"><h3>Qualidados Engenharia faz 20 anos com reconhecimento de gestão e eficiência</h3><span class="link-arrow">Ler comunicado <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="press" href="https://qualidados.com.br/qualidados-marca-presenca-no-principal-evento-de-petroleo-e-gas-da-america-latina/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="5"></div><span class="post__cat">Press release</span><div class="post__body"><h3>Qualidados marca presença no principal evento de petróleo e gás da América Latina</h3><span class="link-arrow">Ler comunicado <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="press" href="https://qualidados.com.br/qualidados-engenharia-e-premiada-pela-revista-exame/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="2"></div><span class="post__cat">Press release</span><div class="post__body"><h3>Qualidados Engenharia é premiada pela Deloitte / Revista Exame</h3><span class="link-arrow">Ler comunicado <i data-icon="arrow"></i></span></div></a>
+
+          <!-- Na mídia -->
+          <a class="post" data-cat="midia" href="https://qualidados.com.br/novos-planos-sustentaveis-tecnologicos-nova-direcao/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="0"></div><span class="post__cat">Na mídia</span><div class="post__body"><h3>Novos planos sustentáveis e tecnológicos, além de nova direção</h3><span class="link-arrow">Ler matéria <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="midia" href="https://qualidados.com.br/qualidados-patrocina-e-participa-ativamente-do-sergipe-oil-gas-2024/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="5"></div><span class="post__cat">Na mídia</span><div class="post__body"><h3>Qualidados patrocina e participa ativamente do Sergipe Oil &amp; Gas 2024</h3><span class="link-arrow">Ler matéria <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="midia" href="https://qualidados.com.br/qualidados-mais-de-25-anos-no-mercado-de-gerenciamento-de-projetos-e-consultoria-em-engenharia/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="2"></div><span class="post__cat">Na mídia</span><div class="post__body"><h3>Qualidados: mais de 25 anos no mercado de gerenciamento de projetos e consultoria em engenharia</h3><span class="link-arrow">Ler matéria <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="midia" href="https://qualidados.com.br/saint-gobain-divulga-finalistas-do-seu-4o-premio-de-arquitetura-sustentavel/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="3"></div><span class="post__cat">Na mídia</span><div class="post__body"><h3>Saint-Gobain divulga finalistas do seu 4º prêmio de arquitetura sustentável</h3><span class="link-arrow">Ler matéria <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="midia" href="https://qualidados.com.br/unijorge-realiza-a-1a-maratona-de-ideias-qualidados/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="4"></div><span class="post__cat">Na mídia</span><div class="post__body"><h3>Unijorge realiza a 1ª Maratona de Ideias Qualidados</h3><span class="link-arrow">Ler matéria <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="midia" href="https://qualidados.com.br/vencedores-da-maratona-de-ideias-qualidados-unijorge/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="0"></div><span class="post__cat">Na mídia</span><div class="post__body"><h3>Vencedores da Maratona de Ideias Qualidados / Unijorge</h3><span class="link-arrow">Ler matéria <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="midia" href="https://qualidados.com.br/inteligencia-em-engenharia-especializacao-e-inovacao/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="5"></div><span class="post__cat">Na mídia</span><div class="post__body"><h3>Inteligência em engenharia, especialização e inovação</h3><span class="link-arrow">Ler matéria <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="midia" href="https://qualidados.com.br/qualidados-mostra-tecnologias-inovadoras-no-congresso-da-abraman/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="1"></div><span class="post__cat">Na mídia</span><div class="post__body"><h3>Qualidados mostra tecnologias inovadoras no Congresso da Abraman</h3><span class="link-arrow">Ler matéria <i data-icon="arrow"></i></span></div></a>
+          <a class="post" data-cat="midia" href="https://qualidados.com.br/crescendo-com-solidez/" target="_blank" rel="noopener" data-reveal><div class="post__art" data-art="2"></div><span class="post__cat">Na mídia</span><div class="post__body"><h3>Crescendo com solidez</h3><span class="link-arrow">Ler matéria <i data-icon="arrow"></i></span></div></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="qd-footer"></div>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</body>
+</html>

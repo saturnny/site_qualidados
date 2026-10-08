@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qualidados — Engenharia com Tecnologia</title>
+  <meta name="description" content="Há mais de 30 anos a Qualidados gerencia paradas de manutenção, projetos e ativos industriais com metodologia própria e soluções digitais. Salvador, Rio de Janeiro e Uberaba.">
+  <meta name="theme-color" content="#0E0406">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Qualidados — Engenharia com Tecnologia">
+  <meta property="og:description" content="Gerenciamento de paradas, projetos e ativos industriais com metodologia própria e soluções digitais.">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      var h = document.documentElement;
+      var pref = null;
+      try { pref = localStorage.getItem("qd-motion"); } catch (e) {}
+      var reduced = pref ? pref === "reduced" : window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (reduced) h.classList.add("motion-reduced");
+      h.classList.add("js-anim");
+      setTimeout(function () { if (!window.__qdReady) h.classList.remove("js-anim"); }, 4000);
+      try { if (sessionStorage.getItem("qd-nav")) { h.classList.add("is-arriving"); sessionStorage.removeItem("qd-nav"); } } catch (e) {}
+      try { if (sessionStorage.getItem("qd-preloaded")) h.classList.add("no-preloader"); } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <img class="preloader__logo" src="https://qualidados.com.br/wp-content/themes/qualidados/assets/images/logo-footer.png" alt="" width="417" height="114">
+      <div class="preloader__bar"><span></span></div>
+      <div class="preloader__meta"><span>Inicializando sistemas</span><span class="preloader__count">000</span></div>
+    </div>
+  </div>
+
+  <div id="qd-header"></div>
+  <script src="assets/js/layout.js"></script>
+
+  <main id="main">
+
+    <!-- ============================== HERO ============================== -->
+    <section class="hero on-dark" id="topo" aria-label="Apresentação">
+      <div class="hero__glow"></div>
+      <div class="blueprint"></div>
+      <div class="hero__canvas" data-hero3d aria-hidden="true"></div>
+
+      <div class="hero__hud" aria-hidden="true">
+        <span class="hud-corner tl"></span><span class="hud-corner tr"></span>
+        <span class="hud-corner bl"></span><span class="hud-corner br"></span>
+        <span class="hud-text tl">12°58′S · 38°30′W — <b>Salvador/BA</b></span>
+        <span class="hud-text tr">BRT <b data-clock>--:--:--</b><br>Visualização · <b data-mode-label>Engenharia</b></span>
+      </div>
+
+
+      <div class="container hero__content">
+        <div class="hero__kicker" data-hero>
+          <span class="tag"><i></i>Salvador · desde 1993</span>
+          <a class="tag tag--link" href="#gps">Novo capítulo · Grupo GPS <span aria-hidden="true">→</span></a>
+        </div>
+        <h1 class="display" data-split="hero">Engenharia e tecnologia para a indústria que <em>não pode parar.</em></h1>
+        <p class="lead hero__sub" data-hero>Gerenciamos paradas de manutenção, projetos e ativos industriais com metodologia própria e soluções digitais, do planejamento à partida da unidade.</p>
+        <div class="hero__ctas" data-hero>
+          <a class="btn btn-primary" href="#especialidades" data-magnetic data-arrow>Nossas especialidades</a>
+          <a class="btn btn-ghost" href="#solucoes" data-arrow>Soluções digitais</a>
+        </div>
+      </div>
+
+      <div class="hero__bottom">
+        <div class="container">
+          <div class="scroll-cue"><span class="scroll-cue__line"></span><span>Role para explorar</span></div>
+          <div class="modes" role="group" aria-label="Alternar visualização 3D">
+            <button class="mode" type="button" data-label="Engenharia"><small>01</small><span>Engenharia</span></button>
+            <button class="mode" type="button" data-label="Presença nacional"><small>02</small><span>Presença</span></button>
+            <button class="mode" type="button" data-label="Inovação"><small>03</small><span>Inovação</span></button>
+            <button class="mode" type="button" data-label="Gêmeo digital"><small>04</small><span>Dados</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== MARQUEE ============================== -->
+    <div class="marquee" aria-label="Setores atendidos">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span class="marquee__item">Petroquímica</span><span class="marquee__sep"></span>
+          <span class="marquee__item outline">Óleo &amp; Gás</span><span class="marquee__sep"></span>
+          <span class="marquee__item">Celulose</span><span class="marquee__sep"></span>
+          <span class="marquee__item outline">Siderurgia</span><span class="marquee__sep"></span>
+          <span class="marquee__item">Energia</span><span class="marquee__sep"></span>
+          <span class="marquee__item outline">Onshore &amp; Offshore</span><span class="marquee__sep"></span>
+          <span class="marquee__item">Paradas de Manutenção</span><span class="marquee__sep"></span>
+          <span class="marquee__item outline">Gestão de Ativos</span><span class="marquee__sep"></span>
+        </div>
+        <div class="marquee__group" aria-hidden="true">
+          <span class="marquee__item">Petroquímica</span><span class="marquee__sep"></span>
+          <span class="marquee__item outline">Óleo &amp; Gás</span><span class="marquee__sep"></span>
+          <span class="marquee__item">Celulose</span><span class="marquee__sep"></span>
+          <span class="marquee__item outline">Siderurgia</span><span class="marquee__sep"></span>
+          <span class="marquee__item">Energia</span><span class="marquee__sep"></span>
+          <span class="marquee__item outline">Onshore &amp; Offshore</span><span class="marquee__sep"></span>
+          <span class="marquee__item">Paradas de Manutenção</span><span class="marquee__sep"></span>
+          <span class="marquee__item outline">Gestão de Ativos</span><span class="marquee__sep"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================== SOBRE NÓS ============================== -->
+    <section class="section section--warm about" id="sobre">
+      <span id="quem-somos" class="sr-only"></span>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><span class="num">01</span> Sobre nós</span>
+            <h2 class="title" data-split>Genuinamente <em>baiana</em>. Engenharia com tecnologia desde 1993.</h2>
+          </div>
+          <p class="lead" data-reveal>Nascemos em Salvador, no embalo do Polo Petroquímico de Camaçari, e hoje levamos engenharia consultiva, gestão de paradas e soluções digitais às maiores operações industriais do país.</p>
+        </div>
+
+        <div class="about-grid">
+        <div class="about-main">
+        <div class="manifesto">
+          <div class="manifesto__aside">
+            <div class="seal" aria-hidden="true">
+              <svg viewBox="0 0 150 150">
+                <defs><path id="sealPath" d="M75,75 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs>
+                <circle cx="75" cy="75" r="73" fill="none" stroke="#E4D6CF"/>
+                <circle cx="75" cy="75" r="44" fill="none" stroke="#E4D6CF" stroke-dasharray="2 4"/>
+                <g class="seal__text"><text font-family="IBM Plex Mono, monospace" font-size="9.6" letter-spacing="2" fill="#8A6D2B"><textPath href="#sealPath" textLength="360">ENGENHARIA COM TECNOLOGIA · DESDE 1993 ·</textPath></text></g>
+              </svg>
+              <div class="seal__center"><div><b>30+</b><small>ANOS</small></div></div>
+            </div>
+          </div>
+          <div>
+            <p class="manifesto__text" data-manifesto>Há mais de 30 anos, a Qualidados conecta pessoas e impulsiona a <em>transformação sustentável</em> das empresas, com engenharia colaborativa e <em>inovação de valor</em>. De Salvador para as maiores operações industriais do país.</p>
+          </div>
+        </div>
+
+        <div class="does" data-reveal>
+          <p class="does__kicker">O que a Qualidados faz</p>
+          <p class="does__lead">Em uma frase: <strong>planejamos, acompanhamos, controlamos e fiscalizamos</strong> paradas de manutenção e projetos industriais, com metodologia própria e tecnologia 4.0, para que a planta volte a operar no prazo, com segurança e dentro do custo.</p>
+          <ol class="does__list">
+            <li><span class="does__ico"><i data-icon="wrench"></i></span><div><b>Paradas de manutenção</b><span>Refinarias, petroquímicas, siderúrgicas, celulose e fertilizantes, de forma contínua desde 2000.</span></div></li>
+            <li><span class="does__ico"><i data-icon="gantt"></i></span><div><b>Obras e projetos de capital</b><span>Todo o ciclo de vida do CAPEX, em modelos EPC, EPCM e Turnkey.</span></div></li>
+            <li><span class="does__ico"><i data-icon="pulse"></i></span><div><b>Gestão de ativos</b><span>Confiabilidade e engenharia de manutenção com referência na ISO 55.</span></div></li>
+            <li><span class="does__ico"><i data-icon="cpu"></i></span><div><b>Tecnologia 4.0</b><span>Dados em tempo real para decisões mais ágeis em campo.</span></div></li>
+          </ol>
+          <div style="margin-top:28px;display:flex;gap:28px;flex-wrap:wrap">
+            <a class="link-arrow" href="#sede">Sobrevoe a nossa sede <i data-icon="arrow"></i></a>
+            <a class="link-arrow" href="institucional.html#historia">Nossa história completa <i data-icon="arrow"></i></a>
+          </div>
+        </div>
+        </div>
+
+        <aside class="bahia-card on-dark" data-reveal="right" aria-label="Rota baiana da Qualidados">
+          <div class="bahia-card__head">
+            <span class="eyebrow">Rota baiana</span>
+            <span class="badge-ba"><i></i>Nascida em Salvador · BA</span>
+          </div>
+          <svg class="bahia-map" viewBox="0 0 520 400" role="img" aria-label="Esquema da Baía de Todos-os-Santos com Salvador, o Polo de Camaçari e a Refinaria de Mataripe">
+            <defs>
+              <pattern id="bmDots" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#EADBB5" opacity=".13"/></pattern>
+              <pattern id="bmWaves" width="24" height="10" patternUnits="userSpaceOnUse"><path d="M0 6 Q6 2 12 6 T24 6" fill="none" stroke="#C9A961" stroke-opacity=".12"/></pattern>
+            </defs>
+            <rect width="520" height="400" fill="#1A080C"/>
+            <rect width="520" height="400" fill="url(#bmDots)"/>
+            <path class="bm-water" d="M492 0 C478 40 462 90 446 120 C430 150 410 200 384 236 C366 258 344 282 318 300 C300 312 282 322 262 334 L248 346 C240 336 234 316 230 292 C226 262 214 234 192 212 C170 196 140 194 112 208 C92 222 82 250 86 276 C90 298 106 314 120 326 C118 346 108 372 96 400 L520 400 L520 0 Z" fill="#2A0E15"/>
+            <path d="M492 0 C478 40 462 90 446 120 C430 150 410 200 384 236 C366 258 344 282 318 300 C300 312 282 322 262 334 L248 346 C240 336 234 316 230 292 C226 262 214 234 192 212 C170 196 140 194 112 208 C92 222 82 250 86 276 C90 298 106 314 120 326 C118 346 108 372 96 400 L520 400 L520 0 Z" fill="url(#bmWaves)"/>
+            <path class="bm-coast" d="M492 0 C478 40 462 90 446 120 C430 150 410 200 384 236 C366 258 344 282 318 300 C300 312 282 322 262 334 L248 346 C240 336 234 316 230 292 C226 262 214 234 192 212 C170 196 140 194 112 208 C92 222 82 250 86 276 C90 298 106 314 120 326 C118 346 108 372 96 400" fill="none" stroke="#C9A961" stroke-opacity=".55" stroke-width="1.2"/>
+            <ellipse cx="172" cy="338" rx="40" ry="15" transform="rotate(-32 172 338)" fill="#1A080C" stroke="#C9A961" stroke-opacity=".45"/>
+            <text x="150" y="268" class="bm-sea">Baía de</text><text x="136" y="282" class="bm-sea">Todos-os-Santos</text>
+            <text x="400" y="330" class="bm-sea">Oceano Atlântico</text>
+            <path class="bm-route bm-route--gold" d="M288 318 C318 262 354 214 380 150"/>
+            <path class="bm-route bm-route--wine" d="M288 318 C272 262 236 196 158 188"/>
+            <g class="bm-pin bm-pin--hq" transform="translate(288 318)"><circle class="bm-pulse" r="10"/><circle r="6"/></g>
+            <g class="bm-pin" transform="translate(380 150)"><circle class="bm-pulse" r="8"/><circle r="5"/></g>
+            <g class="bm-pin bm-pin--wine" transform="translate(158 188)"><circle class="bm-pulse" r="8"/><circle r="5"/></g>
+            <text x="300" y="352" class="bm-label">SALVADOR · SEDE</text><text x="300" y="366" class="bm-sub">Rio Vermelho · desde 1993</text>
+            <text x="366" y="140" class="bm-label" text-anchor="end">POLO DE CAMAÇARI</text><text x="366" y="154" class="bm-sub" text-anchor="end">entrada no Polo · 1994</text>
+            <text x="34" y="150" class="bm-label">REFINARIA DE MATARIPE</text><text x="34" y="164" class="bm-sub">ex-RLAM · Petrobras 2003 · Acelen 2023</text>
+            <g transform="translate(478 46)" class="bm-north"><path d="M0 -16 L6 6 L0 2 L-6 6 Z"/><text y="22" text-anchor="middle">N</text></g>
+          </svg>
+          <p class="bahia-card__note">Salvador, Camaçari e o Recôncavo: é aqui que a Qualidados nasceu, cresceu e segue gerenciando paradas de grandes plantas industriais.</p>
+          <p class="mono bahia-card__legal">Esquema ilustrativo · sem escala</p>
+        </aside>
+        </div>
+
+        <div class="stats">
+          <div class="stat" data-reveal>
+            <span class="stat__tick"></span>
+            <div class="stat__num"><span data-count="30">30</span><small>+</small></div>
+            <p class="stat__label">anos de mercado, desde a fundação em 1993</p>
+          </div>
+          <div class="stat" data-reveal>
+            <span class="stat__tick"></span>
+            <div class="stat__num"><span data-count="2000">2.000</span><small>+</small></div>
+            <p class="stat__label">dias sem acidentes com afastamento</p>
+          </div>
+          <div class="stat" data-reveal>
+            <span class="stat__tick"></span>
+            <div class="stat__num"><small>Top</small><span data-count="15">15</span></div>
+            <p class="stat__label">maiores consultorias de engenharia do Brasil</p>
+          </div>
+          <div class="stat" data-reveal>
+            <span class="stat__tick"></span>
+            <div class="stat__num"><span data-count="3">3</span></div>
+            <p class="stat__label">escritórios: Salvador, Rio de Janeiro e Uberaba</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== SEDE · MISSÃO DRONE ============================== -->
+    <section class="drone on-dark" id="sede" data-drone aria-label="Missão drone: a sede da Qualidados e os locais de contratos">
+      <div class="drone__stage"><div class="drone__fallback" aria-hidden="true"></div></div>
+      <div class="drone__shade" aria-hidden="true"></div>
+
+      <div class="drone__hud">
+        <div class="hud-frame" aria-hidden="true"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
+        <div class="hud-top" aria-hidden="true">
+          <span class="hud-rec"><i></i>REC <b data-hud="rec">00:00:00</b></span>
+          <div class="hud-compass"><div class="hud-compass__tape" data-hud="compass"></div><span class="hud-compass__needle"></span><b class="hud-compass__val" data-hud="hdg">000°</b></div>
+          <span class="hud-status"><b data-hud="mode">DECOLANDO</b><span data-hud="eta">—</span></span>
+        </div>
+        <div class="hud-cross" aria-hidden="true">
+          <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="34" fill="none" stroke="currentColor" stroke-opacity=".35" stroke-dasharray="3 6"/><path d="M60 14v22M60 84v22M14 60h22M84 60h22" stroke="currentColor" stroke-width="1.2"/><circle cx="60" cy="60" r="2" fill="currentColor"/></svg>
+          <div class="hud-horizon" data-hud="horizon"></div>
+        </div>
+        <div class="hud-target" data-hud="target" aria-hidden="true"></div>
+        <div class="hud-minimap">
+          <canvas data-hud="minimap" width="200" height="200" role="img" aria-label="Minimapa da missão: clique num destino para voar até ele"></canvas>
+        </div>
+        <div class="hud-telemetry" aria-hidden="true">
+          <span>ALT <b data-hud="alt">000</b> m</span>
+          <span>DST <b data-hud="dst">000</b> m</span>
+          <span>SPD <b data-hud="spd">00</b> km/h</span>
+          <span class="hud-gps"><b data-hud="lat">13°00′40″S</b> <b data-hud="lon">38°29′26″O</b></span>
+        </div>
+      </div>
+
+      <div class="drone__panel">
+        <div class="drone__intro">
+          <span class="eyebrow"><span class="num">02</span> Missão drone</span>
+          <h2 class="drone__title">Da nossa sede <em>aos nossos contratos</em>.</h2>
+        </div>
+
+        <div class="dest-list" role="group" aria-label="Destinos do drone">
+          <div class="dest-list__head">
+            <span>Escolha um destino</span>
+            <button class="dest-auto" type="button" data-drone-auto aria-pressed="true"><i class="dest-auto__icon" aria-hidden="true"></i><span>Tour</span><b class="dest-auto__bar" aria-hidden="true"><i></i></b></button>
+          </div>
+          <button class="dest is-active" type="button" aria-pressed="true"><span class="dest__code">SSA</span><span class="dest__txt"><b>Sede · Salvador</b><small>Edifício Qualidados Empresarial</small></span><span class="dest__km">Rio Vermelho</span></button>
+          <button class="dest" type="button" aria-pressed="false"><span class="dest__code">CAM</span><span class="dest__txt"><b>Polo de Camaçari</b><small>Origem · petroquímica</small></span><span class="dest__km">≈ 39 km</span></button>
+          <button class="dest" type="button" aria-pressed="false"><span class="dest__code">MAT</span><span class="dest__txt"><b>Refinaria de Mataripe</b><small>Acelen · ex-RLAM Petrobras</small></span><span class="dest__km">≈ 47 km</span></button>
+          <button class="dest" type="button" aria-pressed="false"><span class="dest__code">P58</span><span class="dest__txt"><b>Plataforma P-58</b><small>Petrobras · offshore</small></span><span class="dest__km">≈ 900 km</span></button>
+          <button class="dest" type="button" aria-pressed="false"><span class="dest__code">ARX</span><span class="dest__txt"><b>CBMM · Araxá</b><small>Mineração e metalurgia</small></span><span class="dest__km">≈ 1.160 km</span></button>
+        </div>
+
+        <button class="drone__motion" type="button" data-motion-toggle>Animações reduzidas · ativar voo completo</button>
+        <div class="dest-infos" aria-live="polite">
+          <article class="dest-info is-active">
+            <div class="dest-info__meta"><span>SSA · Salvador · BA</span><span>Sede</span></div>
+            <h3>A sede, de frente para o mar.</h3>
+            <p>No <strong>Edifício Qualidados Empresarial</strong>, na Av. Oceânica, 3638, no Rio Vermelho, fica a sede de uma empresa genuinamente baiana. Fundada em 1993, a Qualidados planeja, controla e fiscaliza paradas de manutenção e projetos industriais em todo o Brasil.</p>
+            <div class="chips"><span class="chip">Rio Vermelho</span><span class="chip">4 pavimentos</span><span class="chip">Sala 401</span></div>
+          </article>
+          <article class="dest-info">
+            <div class="dest-info__meta"><span>CAM · Camaçari · BA</span><span>Desde 1994</span></div>
+            <h3>Onde tudo começou.</h3>
+            <p>A Qualidados nasceu para atender o Polo Petroquímico de Camaçari, o maior complexo industrial integrado do Hemisfério Sul, e chegou ao polo em 1994. Ali atendeu empresas como Ciquine e Bridgestone em projetos, obras e paradas.</p>
+            <div class="chips"><span class="chip">Petroquímica</span><span class="chip">Projetos</span><span class="chip">Paradas</span></div>
+          </article>
+          <article class="dest-info">
+            <div class="dest-info__meta"><span>MAT · São Francisco do Conde · BA</span><span>Acelen</span></div>
+            <h3>Duas décadas na mesma refinaria.</h3>
+            <p>Desde 2023, a Qualidados gerencia, planeja e acompanha as paradas de manutenção dos ativos da Refinaria de Mataripe, operada pela Acelen, além da gestão da rotina e de projetos. Como RLAM, a refinaria já contava com a Qualidados pela Petrobras desde 2003.</p>
+            <div class="chips"><span class="chip">Paradas</span><span class="chip">Rotina</span><span class="chip">Projetos</span></div>
+          </article>
+          <article class="dest-info">
+            <div class="dest-info__meta"><span>P58 · Espírito Santo</span><span>Petrobras</span></div>
+            <h3>Metade da nossa história.</h3>
+            <p>Cliente desde 2002, a Petrobras responde por cerca de metade do portfólio de contratos: paradas em refinarias como RLAM, REPLAN, REDUC e REVAP, a campanha de manutenção da plataforma P-58, engenharia de manutenção em Búzios e o contrato GIRP, no Rio de Janeiro.</p>
+            <div class="chips"><span class="chip">P-58</span><span class="chip">Búzios</span><span class="chip">Refino</span><span class="chip">GIRP</span></div>
+          </article>
+          <article class="dest-info">
+            <div class="dest-info__meta"><span>ARX · Araxá · MG</span><span>CBMM</span></div>
+            <h3>Confiabilidade na líder mundial do nióbio.</h3>
+            <p>Para a CBMM, em Minas Gerais, a Qualidados realizou o diagnóstico de engenharia de confiabilidade no SAP (módulo PM), levando sua metodologia de gestão de ativos para a mineração e a metalurgia.</p>
+            <div class="chips"><span class="chip">Confiabilidade</span><span class="chip">SAP PM</span><span class="chip">Mineração</span></div>
+          </article>
+        </div>
+      </div>
+      <div class="drone__controls" role="toolbar" aria-label="Controles do drone">
+        <button class="dctl" type="button" data-drone-prev aria-label="Destino anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <span class="dctl-step" data-drone-step aria-live="polite">1 / 5</span>
+        <button class="dctl" type="button" data-drone-next aria-label="Próximo destino"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+        <span class="dctl-sep" aria-hidden="true"></span>
+        <button class="dctl" type="button" data-drone-zoom="out" aria-label="Afastar a câmera"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+        <button class="dctl" type="button" data-drone-zoom="in" aria-label="Aproximar a câmera"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+        <button class="dctl is-on" type="button" data-drone-orbit aria-pressed="true" aria-label="Órbita automática"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg></button>
+        <button class="dctl" type="button" data-drone-recenter aria-label="Recentralizar a câmera"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></button>
+      </div>
+      <p class="drone__caption">Arraste para girar · cenas ilustrativas</p>
+    </section>
+
+    <!-- ============================== GRUPO GPS ============================== -->
+    <section class="section section--wine gps" id="gps">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><span class="num">03</span> Novo capítulo</span>
+            <h2 class="title" data-split>Duas histórias baianas, <em>agora juntas</em>.</h2>
+          </div>
+          <p class="lead" data-reveal>Em 22 de setembro de 2026, o Grupo GPS anunciou a aquisição de 80% da Qualidados, por meio da sua controlada Top Service. O grupo, que nasceu em Salvador em 1962, amplia assim sua atuação em engenharia e serviços industriais.</p>
+        </div>
+
+        <div class="gps-grid">
+          <figure class="gps-figure" data-reveal="scale">
+            <svg class="gps-svg" viewBox="0 0 640 400" role="img" aria-label="Linhas do tempo do Grupo GPS, desde 1962, e da Qualidados, desde 1993, que se encontram em 2026">
+              <defs>
+                <linearGradient id="gpsOut" x1="0" x2="1"><stop offset="0" stop-color="#C9A961"/><stop offset="1" stop-color="#EADBB5"/></linearGradient>
+                <pattern id="gpsGrid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#EADBB5" stroke-opacity=".06"/></pattern>
+              </defs>
+              <rect width="640" height="400" fill="url(#gpsGrid)"/>
+              <line x1="40" y1="352" x2="612" y2="352" stroke="#EADBB5" stroke-opacity=".25"/>
+              <g class="gps-ticks" fill="#EADBB5" fill-opacity=".55" font-family="IBM Plex Mono, monospace" font-size="11" text-anchor="middle">
+                <line x1="60" y1="346" x2="60" y2="358" stroke="#EADBB5" stroke-opacity=".5"/><text x="60" y="376">1962</text>
+                <line x1="283" y1="346" x2="283" y2="358" stroke="#EADBB5" stroke-opacity=".5"/><text x="283" y="376">1993</text>
+                <line x1="520" y1="346" x2="520" y2="358" stroke="#EADBB5" stroke-opacity=".5"/><text x="520" y="376">2026</text>
+              </g>
+              <path id="gpsLineA" class="gps-path" d="M60 120 H440 C482 120 488 200 520 200" fill="none" stroke="#C9A961" stroke-width="3" stroke-linecap="round"/>
+              <path id="gpsLineB" class="gps-path" d="M283 282 H440 C482 282 488 200 520 200" fill="none" stroke="#E0405A" stroke-width="3" stroke-linecap="round"/>
+              <path id="gpsLineC" class="gps-path" d="M520 200 H600" fill="none" stroke="url(#gpsOut)" stroke-width="6" stroke-linecap="round"/>
+              <path d="M598 190 L614 200 L598 210" fill="none" stroke="#EADBB5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="gps-pop"/>
+              <g class="gps-pop"><circle cx="60" cy="120" r="9" fill="#0E0406" stroke="#C9A961" stroke-width="2.5"/><circle cx="60" cy="120" r="3.5" fill="#C9A961"/></g>
+              <g class="gps-pop"><circle cx="283" cy="282" r="9" fill="#0E0406" stroke="#E0405A" stroke-width="2.5"/><circle cx="283" cy="282" r="3.5" fill="#E0405A"/></g>
+              <g class="gps-pop"><circle cx="348" cy="282" r="4.5" fill="#E0405A"/><circle cx="434" cy="282" r="4.5" fill="#E0405A"/></g>
+              <text x="354" y="306" class="gps-small" text-anchor="end">Petrobras · 2002</text>
+              <text x="428" y="306" class="gps-small" text-anchor="start">Top 15 · 2014</text>
+              <text x="60" y="90" class="gps-name">Grupo GPS</text><text x="60" y="72" class="gps-small">SALVADOR · 1962</text>
+              <text x="250" y="108" class="gps-small">185 mil+ pessoas · 54 empresas</text>
+              <text x="283" y="252" class="gps-name" text-anchor="middle">Qualidados</text><text x="283" y="234" class="gps-small" text-anchor="middle">SALVADOR · 1993</text>
+              <g class="gps-merge">
+                <circle class="gps-merge__ring" cx="520" cy="200" r="16" fill="none" stroke="#EADBB5" stroke-opacity=".6"/>
+                <circle cx="520" cy="200" r="11" fill="#0E0406" stroke="#EADBB5" stroke-width="2.5"/>
+                <circle cx="520" cy="200" r="4.5" fill="#EADBB5"/>
+              </g>
+              <text x="520" y="166" class="gps-name" text-anchor="middle">2026</text><text x="520" y="148" class="gps-small" text-anchor="middle">NOVO CAPÍTULO</text>
+              <g class="gps-pulses">
+                <circle r="4" fill="#EADBB5"><animateMotion dur="4.2s" repeatCount="indefinite"><mpath href="#gpsLineA"/></animateMotion></circle>
+                <circle r="4" fill="#FFB3BD"><animateMotion dur="3.2s" begin="1s" repeatCount="indefinite"><mpath href="#gpsLineB"/></animateMotion></circle>
+                <circle r="5" fill="#FFFFFF"><animateMotion dur="1.6s" repeatCount="indefinite"><mpath href="#gpsLineC"/></animateMotion></circle>
+              </g>
+            </svg>
+            <figcaption>Ilustração · as linhas do tempo das duas empresas</figcaption>
+          </figure>
+
+          <div class="gps-facts">
+            <div class="gps-fact" data-reveal><b><span data-count="80">80</span>%</b><span>da Qualidados adquiridos pela Top Service, controlada do Grupo GPS</span></div>
+            <div class="gps-fact" data-reveal><b>1962</b><span>ano em que o Grupo GPS nasceu, também em Salvador</span></div>
+            <div class="gps-fact" data-reveal><b><span data-count="185">185</span> mil+</b><span>colaboradores no Grupo GPS</span></div>
+            <div class="gps-fact" data-reveal><b><span data-count="54">54</span></b><span>empresas integradas ao grupo</span></div>
+          </div>
+        </div>
+        <p class="gps-note" data-reveal>A conclusão da operação está sujeita às condições usuais, incluindo a aprovação do CADE. Fonte: comunicado do Grupo GPS ao mercado e imprensa especializada, setembro de 2026.</p>
+      </div>
+    </section>
+
+    <!-- ============================== ESPECIALIDADES ============================== -->
+    <section class="section" id="especialidades">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><span class="num">04</span> Especialidades</span>
+            <h2 class="title" data-split>Engenharia que mantém a <em>operação em movimento</em>.</h2>
+          </div>
+          <p class="lead" data-reveal>Cinco frentes integradas, do planejamento da parada à digitalização dos processos, com a mesma metodologia e o mesmo rigor técnico.</p>
+        </div>
+
+        <div class="spec-panels" data-spec-group data-reveal>
+          <article class="spec is-active" tabindex="0" aria-expanded="true">
+            <div class="spec__bg"><i data-icon="wrench"></i></div>
+            <div class="spec__top"><span class="spec__icon"><i data-icon="wrench"></i></span><span class="spec__num">01 / 05</span></div>
+            <span class="spec__vtitle" aria-hidden="true">Paradas de Manutenção</span>
+            <div class="spec__body">
+              <h3>Gerenciamento de Paradas de Manutenção</h3>
+              <p>Pioneira neste tipo de projeto, a Qualidados soma 30 anos de know-how com foco total na execução de paradas e no gerenciamento do portfólio de paradas.</p>
+              <div class="chips"><span class="chip">Portfólio de paradas</span><span class="chip">Fiscalização</span><span class="chip">Comissionamento</span><span class="chip">Risco técnico</span><span class="chip">Construtibilidade</span></div>
+              <a class="link-arrow" href="servicos.html#paradas">Saiba mais <i data-icon="arrow"></i></a>
+            </div>
+          </article>
+          <article class="spec" tabindex="0" aria-expanded="false">
+            <div class="spec__bg"><i data-icon="gantt"></i></div>
+            <div class="spec__top"><span class="spec__icon"><i data-icon="gantt"></i></span><span class="spec__num">02 / 05</span></div>
+            <span class="spec__vtitle" aria-hidden="true">Gerenciamento de Projetos</span>
+            <div class="spec__body">
+              <h3>Gerenciamento de Projetos</h3>
+              <p>Metodologias e soluções tecnológicas baseadas nas melhores práticas do mercado, com ampla experiência em modelos EPC, EPCM e Turnkey.</p>
+              <div class="chips"><span class="chip">Portfólio e programas</span><span class="chip">Custos e orçamentos</span><span class="chip">Suprimentos</span><span class="chip">Planejamento e controle</span><span class="chip">Riscos</span></div>
+              <a class="link-arrow" href="servicos.html#projetos">Saiba mais <i data-icon="arrow"></i></a>
+            </div>
+          </article>
+          <article class="spec" tabindex="0" aria-expanded="false">
+            <div class="spec__bg"><i data-icon="pulse"></i></div>
+            <div class="spec__top"><span class="spec__icon"><i data-icon="pulse"></i></span><span class="spec__num">03 / 05</span></div>
+            <span class="spec__vtitle" aria-hidden="true">Gestão de Ativos</span>
+            <div class="spec__body">
+              <h3>Gestão de Ativos, Confiabilidade e Manutenção</h3>
+              <p>Implantação de gestão de ativos com metodologia própria e referências da ISO 55, da engenharia de manutenção aos estudos de confiabilidade.</p>
+              <div class="chips"><span class="chip">CMMS SAP / Totvs</span><span class="chip">RCM · FMEA/FMECA</span><span class="chip">PCM</span><span class="chip">Análise RAM · Weibull</span></div>
+              <a class="link-arrow" href="servicos.html#ativos">Saiba mais <i data-icon="arrow"></i></a>
+            </div>
+          </article>
+          <article class="spec" tabindex="0" aria-expanded="false">
+            <div class="spec__bg"><i data-icon="compass"></i></div>
+            <div class="spec__top"><span class="spec__icon"><i data-icon="compass"></i></span><span class="spec__num">04 / 05</span></div>
+            <span class="spec__vtitle" aria-hidden="true">Consultoria</span>
+            <div class="spec__body">
+              <h3>Consultoria em Engenharia</h3>
+              <p>Diagnóstico, análise e implementação de melhorias a partir da maturidade de gestão, do risco e da construtibilidade de cada empreendimento.</p>
+              <div class="chips"><span class="chip">Diagnóstico de maturidade</span><span class="chip">Assessment em FEL</span><span class="chip">Tempos e movimentos</span><span class="chip">Sistemas integrados</span></div>
+              <a class="link-arrow" href="servicos.html#consultoria">Saiba mais <i data-icon="arrow"></i></a>
+            </div>
+          </article>
+          <article class="spec" tabindex="0" aria-expanded="false">
+            <div class="spec__bg"><i data-icon="cpu"></i></div>
+            <div class="spec__top"><span class="spec__icon"><i data-icon="cpu"></i></span><span class="spec__num">05 / 05</span></div>
+            <span class="spec__vtitle" aria-hidden="true">Soluções Tecnológicas</span>
+            <div class="spec__body">
+              <h3>Desenvolvimento de Soluções Tecnológicas</h3>
+              <p>Time dedicado ao desenvolvimento de produtos sob medida, com gestão efetiva de um ecossistema de inovação que inclui startups e academia.</p>
+              <div class="chips"><span class="chip">Prototipagem</span><span class="chip">Aceleração de software</span><span class="chip">Programas de inovação</span><span class="chip">Digitalização</span></div>
+              <a class="link-arrow" href="servicos.html#tecnologia">Saiba mais <i data-icon="arrow"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== SOLUÇÕES ============================== -->
+    <section class="section section--dark" id="solucoes">
+      <div class="blueprint" style="opacity:.6"></div>
+      <div class="container" style="position:relative">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><span class="num">05</span> Soluções digitais</span>
+            <h2 class="title" data-split>Plataformas que levam a engenharia <em>para o campo</em>.</h2>
+          </div>
+          <p class="lead" data-reveal>Web e mobile, online ou offline: visibilidade em tempo real sobre paradas, inspeções, obras e ativos, com dados que viram decisão.</p>
+        </div>
+
+        <div class="console" data-console>
+          <div data-reveal="left">
+            <div class="console__list" role="tablist" aria-label="Soluções digitais">
+              <button class="sol-tab" type="button" role="tab" data-key="fiscal"><small>01</small><span><strong>Fiscal 4.0</strong><em>Fiscalização e comissionamento</em></span><i data-icon="arrow"></i></button>
+              <button class="sol-tab" type="button" role="tab" data-key="inspect"><small>02</small><span><strong>QD Inspect</strong><em>Inspeções de equipamentos</em></span><i data-icon="arrow"></i></button>
+              <button class="sol-tab" type="button" role="tab" data-key="cleopatra"><small>03</small><span><strong>Cleopatra Enterprise</strong><em>Projetos e paradas</em></span><i data-icon="arrow"></i></button>
+              <button class="sol-tab" type="button" role="tab" data-key="qgia"><small>04</small><span><strong>QG IA</strong><em>Ativos com inteligência artificial</em></span><i data-icon="arrow"></i></button>
+              <button class="sol-tab" type="button" role="tab" data-key="engagil"><small>05</small><span><strong>EngAgil</strong><em>Gestão ágil de construção</em></span><i data-icon="arrow"></i></button>
+            </div>
+          </div>
+          <div data-reveal="right">
+            <div class="device">
+              <div class="device__bar">
+                <div class="device__dots"><i></i><i></i><i></i></div>
+                <div class="device__url">app.qualidados.com.br</div>
+                <span class="device__live">AO VIVO</span>
+              </div>
+              <div class="device__screen" role="tabpanel" aria-live="polite"></div>
+            </div>
+            <div class="sol-meta">
+              <div>
+                <div data-info="fiscal" hidden><p>Fiscalização e comissionamento com formulários personalizados e realidade aumentada: fiscais executam checklists em campo com vídeos, fotos e documentação técnica, e gestores enxergam desvios em tempo real.</p><div class="chips"><span class="chip">Web + mobile</span><span class="chip">Realidade aumentada</span><span class="chip">Desvios em tempo real</span></div></div>
+                <div data-info="inspect" hidden><p>Centraliza e padroniza inspeções remotas, rotas e checklists, com histórico completo, geolocalização, priorização por criticidade e operação offline/online.</p><div class="chips"><span class="chip">Rotas e checklists</span><span class="chip">Geolocalização</span><span class="chip">Offline / online</span></div></div>
+                <div data-info="cleopatra" hidden><p>Plataforma de gestão de projetos e paradas de manutenção trazida ao Brasil pela Qualidados: informações centralizadas, acompanhamento em tempo real e colaboração remota para minimizar a inatividade.</p><div class="chips"><span class="chip">Planejamento integrado</span><span class="chip">Tempo real</span><span class="chip">Colaboração remota</span></div></div>
+                <div data-info="qgia" hidden><p>Gestão de ativos, confiabilidade e engenharia de manutenção com inteligência artificial: sistema preditivo, monitoramento de falhas, apps Android/iOS e API para integração com o ERP.</p><div class="chips"><span class="chip">Manutenção preditiva</span><span class="chip">Apps mobile</span><span class="chip">API para ERP</span></div></div>
+                <div data-info="engagil" hidden><p>Gestão ágil de construção: planejamento, supervisão, equipes e alocação de recursos, com registro georreferenciado, assinatura digital e indicadores gerados automaticamente.</p><div class="chips"><span class="chip">Integração ERP</span><span class="chip">Georreferenciamento</span><span class="chip">Assinatura digital</span></div></div>
+              </div>
+              <a class="btn btn-ghost btn-sm" href="servicos.html#solucoes" data-arrow>Detalhes</a>
+            </div>
+            <p class="mono" style="font-size:12.5px;letter-spacing:.14em;color:var(--on-dark-muted);margin-top:18px;text-transform:uppercase">Telas ilustrativas · dados fictícios</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== HISTÓRIA ============================== -->
+    <section class="section--dark timeline-section" id="historia" data-htimeline>
+      <div class="timeline-pin">
+        <div class="container timeline-head">
+          <div>
+            <span class="eyebrow"><span class="num">06</span> Nossa história</span>
+            <h2 class="title" style="margin-top:22px" data-split>Três décadas de <em>engenharia com tecnologia</em>.</h2>
+          </div>
+          <span class="timeline-hint"><i data-icon="arrow"></i>Role para avançar no tempo</span>
+        </div>
+        <div class="timeline-viewport">
+          <div class="timeline-track">
+            <div class="timeline-axis"><span></span></div>
+            <article class="tl-item"><div class="tl-year">1993</div><div class="tl-dot"></div><h3>Fundação</h3><p>Maurício Simões e Luiz Henrique Costa fundam a Qualidados para oferecer serviços de engenharia atrelados à tecnologia.</p><span class="tl-tag">Salvador · BA</span></article>
+            <article class="tl-item"><div class="tl-year">1994</div><div class="tl-dot"></div><h3>Polo de Camaçari</h3><p>Entrada no Polo Petroquímico de Camaçari, o maior complexo industrial integrado do Hemisfério Sul.</p></article>
+            <article class="tl-item"><div class="tl-year">2002</div><div class="tl-dot"></div><h3>Petrobras e expansão</h3><p>Primeiro contrato com a Petrobras e início da atuação fora do Nordeste.</p></article>
+            <article class="tl-item"><div class="tl-year">2003</div><div class="tl-dot"></div><h3>Sistema de gestão certificado</h3><p>Entre 2003 e 2006, conquista das certificações ISO 9001, ISO 14001 e OHSAS 18001.</p><span class="tl-tag">SGI</span></article>
+            <article class="tl-item"><div class="tl-year">2005</div><div class="tl-dot"></div><h3>Gestão estratégica</h3><p>Implementação da metodologia Balanced Scorecard (BSC).</p></article>
+            <article class="tl-item"><div class="tl-year">2009</div><div class="tl-dot"></div><h3>Crescimento reconhecido</h3><p>Em 2009 e 2010, entre as 100 PMEs que mais crescem no Brasil.</p><span class="tl-tag">Deloitte · Exame</span></article>
+            <article class="tl-item"><div class="tl-year">2014</div><div class="tl-dot"></div><h3>Entre as maiores</h3><p>Em 2014 e 2015, entre as 15 maiores empresas de projetos e consultoria do país.</p></article>
+            <article class="tl-item"><div class="tl-year">2020</div><div class="tl-dot"></div><h3>Governança corporativa</h3><p>Implantação do Programa de Governança Corporativa, com Conselho de Administração e comitês.</p></article>
+            <article class="tl-item"><div class="tl-year">2022</div><div class="tl-dot"></div><h3>Great Place To Work</h3><p>Certificação GPTW, reconhecendo uma cultura de confiança, alto desempenho e inovação.</p><span class="tl-tag">GPTW</span></article>
+            <article class="tl-item"><div class="tl-year">2023</div><div class="tl-dot"></div><h3>30 anos</h3><p>Três décadas de história, com a inovação no DNA.</p></article>
+            <article class="tl-item"><div class="tl-year">2023</div><div class="tl-dot"></div><h3>Acelen · Mataripe</h3><p>Início da gestão de paradas, rotina e projetos da Refinaria de Mataripe, a antiga RLAM.</p><span class="tl-tag">São Francisco do Conde · BA</span></article>
+            <article class="tl-item"><div class="tl-year">2026</div><div class="tl-dot"></div><h3>Grupo GPS</h3><p>O Grupo GPS, também nascido em Salvador, anuncia a aquisição de 80% da Qualidados. Um novo capítulo começa.</p><span class="tl-tag">Novo capítulo</span></article>
+            <div class="tl-end" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CULTURA ============================== -->
+    <section class="section section--warm" id="cultura">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><span class="num">07</span> Cultura</span>
+            <h2 class="title" data-split>Fazer o bem, <em>bem feito</em>.</h2>
+          </div>
+          <p class="lead" data-reveal>Nossa cultura orienta cada projeto, do cuidado com as pessoas à excelência técnica entregue em campo.</p>
+        </div>
+
+        <div class="purpose">
+          <div data-reveal>
+            <span class="eyebrow" style="margin-bottom:20px">Propósito</span>
+            <blockquote style="margin-top:18px">“Conectar pessoas e impulsionar a <em>transformação sustentável</em> das empresas, com engenharia colaborativa e inovação de valor.”</blockquote>
+          </div>
+          <div class="purpose-cards">
+            <div class="p-card" data-reveal><span class="ico-wrap"><i data-icon="heart"></i></span><div><h4>Crença</h4><p>Fazer o bem: cuidar bem, querer bem, fazer bem feito, servir bem, resolver bem.</p></div></div>
+            <div class="p-card" data-reveal><span class="ico-wrap"><i data-icon="target"></i></span><div><h4>Visão 2028</h4><p>Navegar em oceanos azuis: um ecossistema de pessoas de conhecimento, empresas e negócios sinérgicos, com soluções inovadoras e impacto positivo.</p></div></div>
+          </div>
+        </div>
+
+        <div class="values" data-reveal>
+          <article class="value"><span class="value__num">01</span><i data-icon="shield" class="value__icon"></i><h3>Integridade</h3><div class="motto">Fazer o certo é inegociável.</div><p>Ética, honestidade, conformidade e transparência em todas as relações.</p></article>
+          <article class="value"><span class="value__num">02</span><i data-icon="zap" class="value__icon"></i><h3>Inovação</h3><div class="motto">Inovar é o caminho para a perenidade.</div><p>Criatividade, aprendizagem contínua e conexão de ideias.</p></article>
+          <article class="value"><span class="value__num">03</span><i data-icon="flag" class="value__icon"></i><h3>Comprometimento</h3><div class="motto">Sentimento de dono com foco no cliente.</div><p>Postura consultiva e integração estratégica com cada cliente.</p></article>
+          <article class="value"><span class="value__num">04</span><i data-icon="star" class="value__icon"></i><h3>Excelência</h3><div class="motto">Fazer sempre bem feito.</div><p>Superação contínua para encantar o cliente.</p></article>
+          <article class="value"><span class="value__num">05</span><i data-icon="smile" class="value__icon"></i><h3>Gentileza</h3><div class="motto">Promover boas relações.</div><p>Clareza, empatia e um ambiente de acolhimento.</p></article>
+          <article class="value"><span class="value__num">06</span><i data-icon="heart" class="value__icon"></i><h3>Valorização da Vida</h3><div class="motto">Prezar pela plenitude da vida.</div><p>Segurança, saúde e sustentabilidade ambiental em primeiro lugar.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== PRESENÇA ============================== -->
+    <section class="section section--dark" id="presenca">
+      <div class="container">
+        <div class="presence">
+          <div class="map-wrap" data-map data-reveal="scale">
+            <canvas aria-label="Mapa do Brasil com os escritórios da Qualidados em Salvador, Rio de Janeiro e Uberaba" role="img"></canvas>
+            <div class="map-legend"><span><i class="sec"></i>Matriz</span><span><i></i>Escritórios</span></div>
+          </div>
+          <div>
+            <span class="eyebrow"><span class="num">08</span> Presença nacional</span>
+            <h2 class="title" style="margin:22px 0 24px" data-split>Onshore e offshore, <em>em todo o Brasil</em>.</h2>
+            <p class="lead" data-reveal>Capilaridade nacional e uma equipe multidisciplinar de engenheiros, técnicos, analistas e consultores para acompanhar cada cliente onde a operação estiver.</p>
+            <div class="offices">
+              <div class="office is-active" data-office="0" tabindex="0" data-reveal><span class="office__code">SSA</span><div><h4>Salvador <small>Matriz</small></h4><p>Av. Oceânica, 3638, sala 401 — Rio Vermelho · CEP 41950-000</p></div><i data-icon="pin"></i></div>
+              <div class="office" data-office="1" tabindex="0" data-reveal><span class="office__code">RIO</span><div><h4>Rio de Janeiro</h4><p>Av. Almirante Barroso, 63, sala 2214 — Centro · CEP 20031-913</p></div><i data-icon="pin"></i></div>
+              <div class="office" data-office="2" tabindex="0" data-reveal><span class="office__code">UBA</span><div><h4>Uberaba · MG</h4><p>Rua Monte Alegre, 280, sala 03 — São Benedito · CEP 38020-380</p></div><i data-icon="pin"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CERTIFICAÇÕES ============================== -->
+    <section class="section section--tight" id="credibilidade">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow"><span class="num">09</span> Credibilidade</span>
+          <h2 class="title" data-split>Credibilidade e <em>confiança</em>, certificadas.</h2>
+        </div>
+        <div class="certs">
+          <div class="cert" data-reveal="scale"><svg class="ring" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="98" fill="none" stroke="currentColor"/><g class="rot"><circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-dasharray="2 7"/></g></svg><div><i data-icon="award" class="cert__ico"></i><b>ISO 9001</b><small>Gestão da qualidade</small></div></div>
+          <div class="cert" data-reveal="scale"><svg class="ring" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="98" fill="none" stroke="currentColor"/><g class="rot"><circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-dasharray="2 7"/></g></svg><div><i data-icon="leaf" class="cert__ico"></i><b>ISO 14001</b><small>Gestão ambiental</small></div></div>
+          <div class="cert" data-reveal="scale"><svg class="ring" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="98" fill="none" stroke="currentColor"/><g class="rot"><circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-dasharray="2 7"/></g></svg><div><i data-icon="hardhat" class="cert__ico"></i><b>ISO 45001</b><small>Saúde e segurança</small></div></div>
+          <div class="cert" data-reveal="scale"><svg class="ring" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="98" fill="none" stroke="currentColor"/><g class="rot"><circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-dasharray="2 7"/></g></svg><div><i data-icon="users" class="cert__ico"></i><b>GPTW</b><small>Great Place To Work</small></div></div>
+          <div class="cert" data-reveal="scale"><svg class="ring" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="98" fill="none" stroke="currentColor"/><g class="rot"><circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-dasharray="2 7"/></g></svg><div><i data-icon="globe" class="cert__ico"></i><b>Pacto Global</b><small>Signatária · ONU</small></div></div>
+          <div class="cert" data-reveal="scale"><svg class="ring" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="98" fill="none" stroke="currentColor"/><g class="rot"><circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-dasharray="2 7"/></g></svg><div><i data-icon="heart" class="cert__ico"></i><b>Pacto pela Mulher</b><small>Selo · Salvador</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CONTEÚDO ============================== -->
+    <section class="section section--warm" id="conteudo">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><span class="num">10</span> Conteúdo</span>
+            <h2 class="title" data-split>Conhecimento que <em>move a indústria</em>.</h2>
+          </div>
+          <div data-reveal>
+            <p class="lead">Artigos técnicos escritos pelos engenheiros da Qualidados sobre gestão, inovação e engenharia.</p>
+            <a class="link-arrow" href="conteudo.html" style="margin-top:18px">Ver todos os conteúdos <i data-icon="arrow"></i></a>
+          </div>
+        </div>
+        <div class="posts">
+          <a class="post" href="https://qualidados.com.br/do-pmo-ao-vmo-como-a-gestao-orientada-a-valor-esta-transformando-os-projetos-industriais/" target="_blank" rel="noopener" data-reveal>
+            <div class="post__art" data-art="0"></div><span class="post__cat">Artigo técnico</span>
+            <div class="post__body"><h3>Do PMO ao VMO: como a gestão orientada a valor está transformando os projetos industriais</h3><span class="link-arrow">Ler artigo <i data-icon="arrow"></i></span></div>
+          </a>
+          <a class="post" href="https://qualidados.com.br/gerenciamento-de-riscos-em-paradas-complexas-a-previsibilidade-alcancada-por-simulacoes-probabilisticas/" target="_blank" rel="noopener" data-reveal>
+            <div class="post__art" data-art="1"></div><span class="post__cat">Artigo técnico</span>
+            <div class="post__body"><h3>Gerenciamento de riscos em paradas complexas: a previsibilidade alcançada por simulações probabilísticas</h3><span class="link-arrow">Ler artigo <i data-icon="arrow"></i></span></div>
+          </a>
+          <a class="post" href="https://qualidados.com.br/qualidados-registra-salto-de-55-e-entra-no-ranking-das-15-maiores-consultorias-de-engenharia-do-brasil/" target="_blank" rel="noopener" data-reveal>
+            <div class="post__art" data-art="2"></div><span class="post__cat">QualiNews</span>
+            <div class="post__body"><h3>Qualidados registra salto de 55% e entra no ranking das 15 maiores consultorias de engenharia do Brasil</h3><span class="link-arrow">Ler notícia <i data-icon="arrow"></i></span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== PESSOAS ============================== -->
+    <section class="section section--wine" id="pessoas" style="overflow:hidden">
+      <svg class="slashes-deco" viewBox="0 0 400 400" style="right:-60px;top:-40px;width:520px;opacity:.5" aria-hidden="true" data-parallax="0.25">
+        <g stroke="#C9A961" stroke-width="1" opacity=".5"><line x1="40" y1="380" x2="200" y2="20"/><line x1="90" y1="380" x2="250" y2="20"/><line x1="140" y1="380" x2="300" y2="20"/><line x1="190" y1="380" x2="350" y2="20"/></g>
+      </svg>
+      <div class="container" style="position:relative">
+        <div class="cta-people">
+          <div>
+            <span class="eyebrow"><span class="num">11</span> Pessoas</span>
+            <h2 class="title" style="margin:22px 0 24px" data-split>Seja um <em>QD</em>.</h2>
+            <p class="lead" data-reveal>Engenheiros, técnicos, analistas e consultores com alta qualificação técnica e espírito de inovação, em um ambiente certificado Great Place To Work onde a voz de cada colaborador é ativa.</p>
+            <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:36px" data-reveal>
+              <a class="btn btn-gold" href="https://qualidados.gupy.io/" target="_blank" rel="noopener" data-magnetic data-arrow>Ver vagas abertas</a>
+              <a class="btn btn-ghost" href="pessoas.html" data-arrow>Vida na Qualidados</a>
+            </div>
+          </div>
+          <div class="people-stats">
+            <div class="people-stat" data-reveal><b><span data-count="48">48</span>%</b><span>das posições de liderança ocupadas por mulheres</span></div>
+            <div class="people-stat" data-reveal><b>GPTW</b><span>Great Place To Work desde 2022</span></div>
+            <div class="people-stat" data-reveal><b><span data-count="15">15</span>%</b><span>do time com 60 anos ou mais</span></div>
+            <div class="people-stat" data-reveal><b>2 anos</b><span>de programa de estágio, com mentoria e rotação de áreas</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CONTATO ============================== -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="contact">
+          <div>
+            <span class="eyebrow"><span class="num">12</span> Contato</span>
+            <h2 class="title" style="margin:22px 0 24px" data-split>Vamos falar sobre a sua <em>operação</em>?</h2>
+            <p class="lead" data-reveal>Conte o seu desafio. Um especialista retorna para entender o cenário e propor o melhor caminho.</p>
+            <div class="contact__info" style="margin-top:44px">
+              <div class="info-line" data-reveal><span class="ico-wrap"><i data-icon="phone"></i></span><div><small>Telefone</small><a href="tel:+557133392600">+55 71 3339-2600</a></div></div>
+              <div class="info-line" data-reveal><span class="ico-wrap"><i data-icon="mail"></i></span><div><small>E-mail</small><a href="mailto:contatoqd@qualidados.com.br">contatoqd@qualidados.com.br</a></div></div>
+              <div class="info-line" data-reveal><span class="ico-wrap"><i data-icon="pin"></i></span><div><small>Matriz</small><p>Av. Oceânica, 3638, sala 401 — Rio Vermelho, Salvador/BA</p></div></div>
+            </div>
+          </div>
+
+          <form class="form" data-form novalidate data-reveal>
+            <div class="form__grid">
+              <div class="field"><input id="f-nome" name="nome" type="text" placeholder=" " required autocomplete="name"><label for="f-nome">Nome *</label><span class="err">Informe seu nome.</span></div>
+              <div class="field"><input id="f-empresa" name="empresa" type="text" placeholder=" " autocomplete="organization"><label for="f-empresa">Empresa</label></div>
+              <div class="field"><input id="f-email" name="email" type="email" placeholder=" " required autocomplete="email"><label for="f-email">E-mail *</label><span class="err">Informe um e-mail válido.</span></div>
+              <div class="field"><input id="f-tel" name="telefone" type="tel" placeholder=" " autocomplete="tel"><label for="f-tel">Telefone</label></div>
+              <div class="field field--full">
+                <select id="f-assunto" name="assunto">
+                  <option>Gerenciamento de paradas</option>
+                  <option>Gerenciamento de projetos</option>
+                  <option>Gestão de ativos e confiabilidade</option>
+                  <option>Consultoria em engenharia</option>
+                  <option>Soluções digitais</option>
+                  <option>Outro assunto</option>
+                </select>
+                <label for="f-assunto">Assunto</label>
+              </div>
+              <div class="field field--full"><textarea id="f-msg" name="mensagem" placeholder=" " required></textarea><label for="f-msg">Como podemos ajudar? *</label><span class="err">Escreva uma mensagem.</span></div>
+              <label class="consent"><input type="checkbox" name="consent" required> <span>Concordo com o tratamento dos meus dados para retorno deste contato, conforme a <a href="institucional.html#lgpd">política de privacidade e a LGPD</a>.</span></label>
+              <div class="form__foot">
+                <span class="form__note">* Campos obrigatórios</span>
+                <button class="btn btn-primary" type="submit" data-magnetic data-arrow>Enviar mensagem</button>
+              </div>
+            </div>
+            <div class="form__success" role="status">
+              <div>
+                <div class="ok"><i data-icon="check"></i></div>
+                <h3>Mensagem recebida!</h3>
+                <p>Obrigado pelo contato. Nossa equipe retornará em breve.</p>
+                <button class="link-arrow" type="button" data-form-reset style="margin-top:20px">Enviar outra mensagem <i data-icon="arrow"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="qd-footer" data-no-cta></div>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script defer src="assets/js/dashboards.js"></script>
+  <script defer src="assets/js/main.js"></script>
+  <script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }</script>
+  <script type="module" src="assets/js/hero3d.js"></script>
+  <script type="module" src="assets/js/drone.js"></script>
+</body>
+</html>
